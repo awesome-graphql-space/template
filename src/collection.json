@@ -1,0 +1,65 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "application": {
+      "factory": "./lib/factories/application.factory#main",
+      "description": "Create a Nest application."
+    },
+    "class": {
+      "factory": "./lib/factories/class.factory#main",
+      "description": "Create a new class."
+    },
+    "configuration": {
+      "factory": "./lib/factories/configuration.factory#main",
+      "description": "Create a NestCLI configuration file."
+    },
+    "controller": {
+      "factory": "./lib/factories/controller.factory#main",
+      "description": "Create a Nest controller."
+    },
+    "decorator": {
+      "factory": "./lib/factories/decorator.factory#main",
+      "description": "Create a Nest decorator."
+    },
+    "exception": {
+      "factory": "./lib/factories/exception.factory#main",
+      "description": "Create a Nest exception."
+    },
+    "filter": {
+      "factory": "./lib/factories/filter.factory#main",
+      "description": "Create a Nest filter."
+    },
+    "gateway": {
+      "factory": "./lib/factories/gateway.factory#main",
+      "description": "Create a Nest gateway."
+    },
+    "guard": {
+      "factory": "./lib/factories/guard.factory#main",
+      "description": "Create a Nest guard."
+    },
+    "interceptor": {
+      "factory": "./lib/factories/interceptor.factory#main",
+      "description": "Create a Nest interceptor."
+    },
+    "middleware": {
+      "factory": "./lib/factories/middleware.factory#main",
+      "description": "Create a Nest middleware."
+    },
+    "module": {
+      "factory": "./lib/factories/module.factory#main",
+      "description": "Create a Nest module."
+    },
+    "pipe": {
+      "factory": "./lib/factories/pipe.factory#main",
+      "description": "Create a Nest pipe."
+    },
+    "provider": {
+      "factory": "./lib/factories/provider.factory#main",
+      "description": "Create a Nest provider."
+    },
+    "service": {
+      "factory": "./lib/factories/service.factory#main",
+      "description": "Create a Nest service."
+    }
+  }
+}
