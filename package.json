@@ -1,7 +1,7 @@
 {
-  "name": "@nestjs/schematics",
+  "name": "@lina/template",
   "version": "5.8.0",
-  "description": "Nestjs schematics project for @nestjs/cli",
+  "description": "lina schematics project for @lina/cli",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nestjs/schematics.git"
+    "url": "git+https://github.com/awesome-graphql-space/template.git"
   },
   "author": "ThomRick",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nestjs/schematics/issues"
+    "url": "https://github.com/awesome-graphql-space/template/issues"
   },
-  "homepage": "https://github.com/nestjs/schematics#readme",
+  "homepage": "https://github.com/awesome-graphql-space/template/blob/master/README.md",
   "dependencies": {
     "@angular-devkit/core": "^0.8.1",
     "@angular-devkit/schematics": "^0.8.1",
