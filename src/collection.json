@@ -3,7 +3,7 @@
   "schematics": {
     "application": {
       "factory": "./lib/factories/application.factory#main",
-      "description": "Create a Nest application."
+      "description": "Create a Lina application."
     },
     "class": {
       "factory": "./lib/factories/class.factory#main",
@@ -11,55 +11,55 @@
     },
     "configuration": {
       "factory": "./lib/factories/configuration.factory#main",
-      "description": "Create a NestCLI configuration file."
+      "description": "Create a LinaCLI configuration file."
     },
     "controller": {
       "factory": "./lib/factories/controller.factory#main",
-      "description": "Create a Nest controller."
+      "description": "Create a Lina controller."
     },
     "decorator": {
       "factory": "./lib/factories/decorator.factory#main",
-      "description": "Create a Nest decorator."
+      "description": "Create a Lina decorator."
     },
     "exception": {
       "factory": "./lib/factories/exception.factory#main",
-      "description": "Create a Nest exception."
+      "description": "Create a Lina exception."
     },
     "filter": {
       "factory": "./lib/factories/filter.factory#main",
-      "description": "Create a Nest filter."
+      "description": "Create a Lina filter."
     },
     "gateway": {
       "factory": "./lib/factories/gateway.factory#main",
-      "description": "Create a Nest gateway."
+      "description": "Create a Lina gateway."
     },
     "guard": {
       "factory": "./lib/factories/guard.factory#main",
-      "description": "Create a Nest guard."
+      "description": "Create a Lina guard."
     },
     "interceptor": {
       "factory": "./lib/factories/interceptor.factory#main",
-      "description": "Create a Nest interceptor."
+      "description": "Create a Lina interceptor."
     },
     "middleware": {
       "factory": "./lib/factories/middleware.factory#main",
-      "description": "Create a Nest middleware."
+      "description": "Create a Lina middleware."
     },
     "module": {
       "factory": "./lib/factories/module.factory#main",
-      "description": "Create a Nest module."
+      "description": "Create a Lina module."
     },
     "pipe": {
       "factory": "./lib/factories/pipe.factory#main",
-      "description": "Create a Nest pipe."
+      "description": "Create a Lina pipe."
     },
     "provider": {
       "factory": "./lib/factories/provider.factory#main",
-      "description": "Create a Nest provider."
+      "description": "Create a Lina provider."
     },
     "service": {
       "factory": "./lib/factories/service.factory#main",
-      "description": "Create a Nest service."
+      "description": "Create a Lina service."
     }
   }
 }
