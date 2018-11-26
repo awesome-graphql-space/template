@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/awesome-graphql-space/template/blob/master/README.md",
   "dependencies": {
-    "@angular-devkit/core": "^0.8.1",
+    "@angular-devkit/core": "^7.0.0",
     "@angular-devkit/schematics": "^0.8.1",
     "typescript": "^2.9.2"
   },
