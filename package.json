@@ -26,7 +26,7 @@
   "dependencies": {
     "@angular-devkit/core": "^0.8.1",
     "@angular-devkit/schematics": "^0.8.1",
-    "typescript": "^2.9.2"
+    "typescript": "^4.0.0"
   },
   "devDependencies": {
     "@types/jest": "^22.2.3",
