@@ -1,16 +1,16 @@
-FROM node:carbon-alpine as dev-dependencies
+FROM node:iron-alpine as dev-dependencies
 WORKDIR /nestjs/schematics
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 RUN npm install
 
-FROM node:carbon-alpine as prod-dependencies
+FROM node:iron-alpine as prod-dependencies
 WORKDIR /nestjs/schematics
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 RUN npm install --production
 
-FROM node:carbon-alpine as linter
+FROM node:iron-alpine as linter
 WORKDIR /nestjs/schematics
 COPY --from=dev-dependencies /nestjs/schematics .
 COPY src src
@@ -19,17 +19,17 @@ COPY tsconfig.json tsconfig.json
 COPY tslint.json tslint.json
 RUN npm run -s lint:src && npm run -s lint:test
 
-FROM node:carbon-alpine as tester
+FROM node:iron-alpine as tester
 WORKDIR /nestjs/schematics
 COPY --from=linter /nestjs/schematics .
 RUN npm test -s
 
-FROM node:carbon-alpine as builder
+FROM node:iron-alpine as builder
 WORKDIR /nestjs/schematics
 COPY --from=tester /nestjs/schematics .
 RUN npm run -s build
 
-FROM node:carbon-alpine
+FROM node:iron-alpine
 RUN npm install -g @angular-devkit/schematics-cli
 WORKDIR /nestjs/schematics
 COPY --from=prod-dependencies /nestjs/schematics .
